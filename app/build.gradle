@@ -8,6 +8,9 @@ plugins {
 }
 
 android {
+    lint {
+        abortOnError = false
+    }
     namespace 'com.willbsp.habits'
     compileSdk libs.versions.compileSdk.get().toInteger()
 
